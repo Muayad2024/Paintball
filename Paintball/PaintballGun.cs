@@ -1,10 +1,10 @@
-﻿class PaintballGun 
+﻿class PaintballGun //this is not static class that means we can create multiple instances of it
 {
     private int balls;
 
     public PaintballGun(int balls, int magazineSize, bool loaded)
     {
-        this.balls = balls;
+        this.balls = balls;    //this refers to the instance variable balls
         MagazineSize = magazineSize;
         if (loaded) Reload();
     }
